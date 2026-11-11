@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Emilia Gyr | Psicoterapia psicoanalítica online, C.Ps.P. 36639</title>
+<meta name="description" content="Psicoterapia psicoanalítica online para adultos. Trastorno límite de la personalidad, ansiedad y patrones en las relaciones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F4F8; --ink:#231D2E; --muted:#5B5568; --line:#DAD6E2;
+  --accent:#4B3F72; --on-accent:#FFFFFF; --soft:#E9E5F2;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  background:var(--bg);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#17131F; --ink:#ECE8F4; --muted:#A9A2B8; --line:#332C42;
+    --accent:#B7ABEA; --on-accent:#1B1626; --soft:#241E33;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#17131F; --ink:#ECE8F4; --muted:#A9A2B8; --line:#332C42;
+  --accent:#B7ABEA; --on-accent:#1B1626; --soft:#241E33;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15;margin:0}
+h1{font-size:clamp(2.2rem,5.4vw,3.6rem);letter-spacing:-.01em;max-width:16ch}
+h2{font-size:clamp(1.7rem,3.4vw,2.3rem);margin-bottom:28px}
+h3{font-size:1.35rem}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+.top{padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{font-family:var(--serif);font-size:1.15rem}
+.top a.link{font-size:.95rem;color:var(--muted);text-decoration:none}
+.top a.link:hover{color:var(--ink);text-decoration:underline}
+.nav{display:flex;align-items:center;gap:20px}
+.lang{font:inherit;font-size:.9rem;font-weight:500;padding:6px 16px;border-radius:999px;border:1.5px solid var(--accent);background:transparent;color:var(--ink);cursor:pointer}
+.lang:hover{background:var(--soft)}
+
+.hero{padding:48px 0 80px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero .lead{font-size:1.15rem;color:var(--muted);margin:24px 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{filter:brightness(1.08)}
+.loops{width:100%;height:auto;color:var(--accent)}
+.loops path{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1;animation:draw 2.4s ease-out backwards}
+.loops path:nth-child(2){animation-delay:.2s}.loops path:nth-child(3){animation-delay:.4s}
+.loops path:nth-child(4){animation-delay:.6s}.loops path:nth-child(5){animation-delay:.8s}
+.loops path:nth-child(6){animation-delay:1s}.loops path:nth-child(7){animation-delay:1.2s}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.loops path{animation:none}html{scroll-behavior:auto}}
+
+.band{padding:72px 0;border-top:1px solid var(--line)}
+.rows>div{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:32px;padding:28px 0;border-top:1px solid var(--line)}
+.rows>div:first-child{border-top:0;padding-top:0}
+.rows p{margin:0;color:var(--muted)}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:28px;max-width:720px;counter-reset:s}
+ol.steps li{position:relative;padding-left:56px;counter-increment:s}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--soft);color:var(--accent);display:grid;place-items:center;font-family:var(--serif);font-size:1.2rem}
+ol.steps h3{margin-bottom:4px}
+ol.steps p{margin:0;color:var(--muted)}
+.two{display:grid;grid-template-columns:1.2fr .8fr;gap:48px}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 24px;align-self:start;background:var(--soft);padding:28px;border-radius:14px}
+dt{color:var(--muted)}
+dd{margin:0;font-weight:500}
+details{border-top:1px solid var(--line);padding:18px 0;max-width:720px}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-family:var(--serif);font-size:1.25rem;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--accent)}
+details[open] summary::after{content:"–"}
+details p{margin:12px 0 0;color:var(--muted)}
+.cta{background:var(--soft);border-radius:18px;padding:48px 32px;text-align:left}
+.cta p{color:var(--muted)}
+footer{padding:40px 0 56px;border-top:1px solid var(--line);font-size:.92rem;color:var(--muted)}
+footer p{max-width:70ch}
+
+@media (max-width:760px){
+  .hero,.two{grid-template-columns:1fr}
+  .rows>div{grid-template-columns:1fr;gap:8px}
+  .hero{padding-bottom:56px}
+  .loops{max-width:320px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="brand">Emilia Gyr</span>
+    <span class="nav"><a class="link" href="#contacto">Contacto</a><button class="lang" type="button" aria-label="Switch to English">English</button></span>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Entender lo que se repite en tus relaciones</h1>
+      <p class="lead">Psicoterapia psicoanalítica online para adultos, con especial atención al trastorno límite de la personalidad, la ansiedad y los patrones en los vínculos. Atiendo en español e inglés.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://wa.me/51984165422">Escríbeme por WhatsApp</a>
+        <a class="btn ghost" href="mailto:gyr.emilia@gmail.com">Enviar un correo</a>
+      </div>
+    </div>
+    <svg class="loops" viewBox="0 0 360 300" role="img" aria-label="Una misma línea que se repite con variaciones">
+      <path pathLength="1" d="M20 150 C 70 -10, 150 -10, 175 80 S 260 200, 340 40"/>
+      <path pathLength="1" transform="translate(0 20)" opacity=".85" d="M20 150 C 70 -10, 150 -10, 175 80 S 260 200, 340 40"/>
+      <path pathLength="1" transform="translate(0 40)" opacity=".7" d="M20 150 C 70 -10, 150 -10, 175 80 S 260 200, 340 40"/>
+      <path pathLength="1" transform="translate(0 60)" opacity=".55" d="M20 150 C 70 -10, 150 -10, 175 80 S 260 200, 340 40"/>
+      <path pathLength="1" transform="translate(0 80)" opacity=".42" d="M20 150 C 70 -10, 150 -10, 175 80 S 260 200, 340 40"/>
+      <path pathLength="1" transform="translate(0 100)" opacity=".3" d="M20 150 C 70 -10, 150 -10, 175 80 S 260 200, 340 40"/>
+      <path pathLength="1" transform="translate(0 120)" opacity=".2" d="M20 150 C 70 -10, 150 -10, 175 80 S 260 200, 340 40"/>
+    </svg>
+  </section>
+
+  <section class="band" id="ayuda">
+    <h2>Con qué puedo ayudarte</h2>
+    <div class="rows">
+      <div>
+        <h3>Trastorno límite de la personalidad</h3>
+        <p>Emociones muy intensas, miedo al abandono, relaciones que pasan de la cercanía total a la ruptura. Trabajamos para que lo que sientes pueda pensarse y sostenerse con más estabilidad.</p>
+      </div>
+      <div>
+        <h3>Ansiedad</h3>
+        <p>Preocupación constante, tensión en el cuerpo, la sensación de vivir en alerta. Exploramos qué hay detrás y desde cuándo ocupa tanto lugar en tu vida.</p>
+      </div>
+      <div>
+        <h3>Patrones en las relaciones</h3>
+        <p>Elegir parejas parecidas, repetir los mismos conflictos, sentir que das más de lo que recibes. Ponemos palabras a lo que se repite para poder hacer algo distinto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="como-trabajo">
+    <h2>Cómo trabajo</h2>
+    <ol class="steps">
+      <li>
+        <h3>Primera entrevista</h3>
+        <p>Una sesión de 45 minutos para conversar sobre lo que te trae y ver si este espacio te sirve. No hay compromiso de continuar.</p>
+      </li>
+      <li>
+        <h3>Sesiones regulares</h3>
+        <p>Nos encontramos por videollamada, a la misma hora y con una frecuencia que acordamos juntas o juntos, habitualmente semanal.</p>
+      </li>
+      <li>
+        <h3>Revisión del camino</h3>
+        <p>De vez en cuando revisamos cómo te sientes en el proceso y si el rumbo sigue siendo el que necesitas.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="band" id="sobre-mi">
+    <div class="two">
+      <div>
+        <h2>Sobre mí</h2>
+        <p>Soy Emilia Gyr, psicóloga colegiada en el Colegio de Psicólogos del Perú (C.Ps.P. 36639).</p>
+        <p>Tengo un máster en Psicoterapia Psicoanalítica y Neurociencias. Mi trabajo se centra en adultos que sufren por sus emociones, su ansiedad o por la manera en que se vinculan con los demás.</p>
+      </div>
+      <dl>
+        <dt>Formato</dt><dd>Videollamada</dd>
+        <dt>Duración</dt><dd>45 minutos</dd>
+        <dt>Atiendo a</dt><dd>Adultos</dd>
+        <dt>Idiomas</dt><dd>Español e inglés</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="band" id="preguntas">
+    <h2>Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Qué es la psicoterapia psicoanalítica?</summary>
+      <p>Es una terapia basada en la palabra. Exploramos pensamientos, emociones y vínculos, incluidos los que no resultan evidentes, para comprender de dónde vienen tus síntomas y cambiar la forma en que te relacionas con ellos.</p>
+    </details>
+    <details>
+      <summary>¿Necesito un diagnóstico para empezar?</summary>
+      <p>No. Puedes consultar por lo que sientes, sin etiquetas. Si hace falta valorar un diagnóstico, lo hablamos durante el proceso.</p>
+    </details>
+    <details>
+      <summary>¿Lo que cuento es confidencial?</summary>
+      <p>Sí. Lo que se habla en sesión está protegido por el secreto profesional, con las excepciones que marcan la ley y la ética de la profesión.</p>
+    </details>
+    <details>
+      <summary>¿Cuánto dura la terapia?</summary>
+      <p>Depende de cada persona y de lo que busque. Lo conversamos en la primera entrevista y lo revisamos a lo largo del proceso.</p>
+    </details>
+  </section>
+
+  <section class="band" id="contacto">
+    <div class="cta">
+      <h2>Agenda tu primera entrevista</h2>
+      <p>Cuéntame brevemente qué te gustaría trabajar y buscamos un horario. Te respondo lo antes posible.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://wa.me/51984165422">Escríbeme por WhatsApp</a>
+        <a class="btn ghost" href="mailto:gyr.emilia@gmail.com">Enviar un correo</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Este servicio no atiende urgencias. Si estás en crisis o piensas en hacerte daño, acude a urgencias de tu zona o llama a la Línea 113 si estás en Perú.</p>
+    <p>© 2026 Emilia Gyr. Psicóloga colegiada C.Ps.P. 36639.</p>
+  </footer>
+</div>
+<script>
+(function(){
+var P=[
+["Contacto","Contact"],
+["Entender lo que","Understanding what repeats in your relationships"],
+["Psicoterapia psicoanalítica online","Online psychoanalytic psychotherapy for adults, with a special focus on borderline personality disorder, anxiety and patterns in relationships. Sessions in Spanish and English."],
+["Escríbeme por","Message me on WhatsApp"],
+["Enviar un correo","Send an email"],
+["Con qué puedo","How I can help"],
+["Trastorno límite","Borderline personality disorder"],
+["Emociones muy","Very intense emotions, fear of abandonment, relationships that swing from total closeness to rupture. We work so that what you feel can be thought about and held with more stability."],
+["Ansiedad","Anxiety"],
+["Preocupación constante","Constant worry, tension in the body, the feeling of living on alert. We explore what lies behind it and since when it has taken up so much space in your life."],
+["Patrones en las","Patterns in relationships"],
+["Elegir parejas","Choosing similar partners, repeating the same conflicts, feeling that you give more than you receive. We put words to what repeats so that you can do something different."],
+["Cómo trabajo","How I work"],
+["Primera entrevista","First session"],
+["Una sesión de","A 45-minute session to talk about what brings you here and see whether this space works for you. There is no commitment to continue."],
+["Sesiones regulares","Regular sessions"],
+["Nos encontramos","We meet by video call, at the same time and at a frequency we agree on together, usually weekly."],
+["Revisión del","Reviewing the path"],
+["De vez en","From time to time we review how you are feeling in the process and whether the direction is still the one you need."],
+["Sobre mí","About me"],
+["Soy Emilia","I am Emilia Gyr, a licensed psychologist registered with the Colegio de Psicólogos del Perú (C.Ps.P. 36639)."],
+["Tengo un máster","I hold a master’s degree in Psychoanalytic Psychotherapy and Neuroscience. My work focuses on adults who struggle with their emotions, their anxiety, or the way they relate to others."],
+["Formato","Format"],["Videollamada","Video call"],["Duración","Duration"],["45 minutos","45 minutes"],
+["Atiendo a","I work with"],["Adultos","Adults"],["Idiomas","Languages"],["Español e inglés","Spanish and English"],
+["Preguntas","Frequently asked questions"],
+["¿Qué es la","What is psychoanalytic psychotherapy?"],
+["Es una terapia","It is a talking therapy. We explore thoughts, emotions and relationships, including those that are not obvious, to understand where your symptoms come from and change how you relate to them."],
+["¿Necesito","Do I need a diagnosis to start?"],
+["No. Puedes","No. You can come with what you feel, without labels. If a diagnosis needs to be considered, we talk about it during the process."],
+["¿Lo que cuento","Is what I share confidential?"],
+["Sí. Lo que","Yes. What is said in session is protected by professional secrecy, with the exceptions set by law and professional ethics."],
+["¿Cuánto dura","How long does therapy last?"],
+["Depende de","It depends on each person and on what they are looking for. We discuss it in the first session and review it along the way."],
+["Agenda tu","Book your first session"],
+["Cuéntame","Tell me briefly what you would like to work on and we will find a time. I will reply as soon as possible."],
+["Este servicio","This service does not handle emergencies. If you are in crisis or thinking of harming yourself, go to your local emergency services or call Line 113 if you are in Peru."],
+["© 2026","© 2026 Emilia Gyr. Licensed psychologist, C.Ps.P. 36639."]
+];
+var items=[],w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n,t,i;
+while((n=w.nextNode())){
+  t=n.nodeValue.trim();
+  if(!t||n.parentNode.tagName==='SCRIPT'||n.parentNode.tagName==='BUTTON')continue;
+  for(i=0;i<P.length;i++){
+    if(t.indexOf(P[i][0])===0){items.push({n:n,es:n.nodeValue,en:n.nodeValue.replace(t,P[i][1])});break;}
+  }
+}
+var btn=document.querySelector('.lang'),svg=document.querySelector('.loops'),
+    meta=document.querySelector('meta[name="description"]'),
+    T={es:document.title,en:'Emilia Gyr | Online psychoanalytic psychotherapy, C.Ps.P. 36639'},
+    M={es:meta?meta.content:'',en:'Online psychoanalytic psychotherapy for adults. Borderline personality disorder, anxiety and patterns in relationships.'},
+    A={es:'Una misma línea que se repite con variaciones',en:'The same line repeating with variations'};
+function setLang(l){
+  items.forEach(function(o){o.n.nodeValue=(l==='en')?o.en:o.es;});
+  document.documentElement.lang=l;
+  document.title=T[l];
+  if(meta)meta.content=M[l];
+  if(svg)svg.setAttribute('aria-label',A[l]);
+  btn.textContent=(l==='en')?'Español':'English';
+  btn.setAttribute('aria-label',(l==='en')?'Cambiar a español':'Switch to English');
+  btn.setAttribute('data-l',l);
+}
+btn.addEventListener('click',function(){setLang(btn.getAttribute('data-l')==='en'?'es':'en');});
+var nl=(navigator.language||'es').slice(0,2).toLowerCase();
+setLang(nl==='en'?'en':'es');
+})();
+</script>
+</body>
+</html>
